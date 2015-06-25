@@ -30,11 +30,11 @@ class Smarty {
 	public static function getUnique() {
 		$smarty = new \Smarty();
 
-		$smarty->template_dir = dirname(__FILE__).'/../templates';
-		$smarty->compile_dir = dirname(__FILE__).'/../cache/templates_c';
+		$smarty->template_dir = dirname(__FILE__).'/../../../../templates';
+		$smarty->compile_dir = dirname(__FILE__).'/../../../../cache/templates_c';
 		$smarty->debugging = false;
 
-		if (DEBUG === true && FORCE_COMPILE === true) {
+		if (defined('DEBUG') && DEBUG === true && defined('FORCE_COMPILE') && FORCE_COMPILE === true) {
 			$smarty->compile_check = true;
 			$smarty->force_compile = true;
 		}
