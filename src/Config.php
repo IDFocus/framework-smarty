@@ -42,16 +42,6 @@ class Smarty {
 		$config = \InterExperts\Config::getInstance();
 		$smarty->assign('config', $config);
 
-		try {
-			$loggedInUser = \InterExperts\Epsi\User\UserFactory::getCurrentUser();
-		}
-		catch (\InterExperts\Epsi\LocationNotFoundException $e) {
-			$smarty->assign('message', 'Uw account is niet aan een locatie gekoppeld. U kunt geen gebruik maken van dit systeem.');
-			$smarty->display('common/error.html');
-			exit;
-		}
-		$smarty->assign('loggedInUser', $loggedInUser);
-
 		return $smarty;
 	}
 
