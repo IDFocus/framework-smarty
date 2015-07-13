@@ -1,5 +1,7 @@
 {
     "name": "interexperts/smarty",
+    "license": "MIT",
+    "description": "Smarty wrapper",
     "autoload": {
         "psr-4": {
             "InterExperts\\": "src/"
