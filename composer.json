@@ -1,22 +1,22 @@
 {
-	"name": "interexperts/smarty",
-	"autoload": {
-		"psr-4": {
-			"InterExperts\\": "src/"
-		}
-	},
-	"require-dev": {
-		"phpunit/phpunit": "4.5.*",
-		"phpmd/phpmd" : "@stable"
-	},
-	"repositories": [
+    "name": "interexperts/smarty",
+    "autoload": {
+        "psr-4": {
+            "InterExperts\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.5.*",
+        "phpmd/phpmd" : "@stable"
+    },
+    "repositories": [
         {
             "type": "vcs",
-            "url":  "ssh://git@git.interexperts.nl:2220/framework/Config.git"
+            "url":  "git@github.com:interexperts/framework-config.git"
         }
     ],
-	"require": {
-		"smarty/smarty": "~3.1",
-        "interexperts/config": "dev-master"
+    "require": {
+        "smarty/smarty": "~3.1",
+        "interexperts/config": "~1.0"
     }
 }
