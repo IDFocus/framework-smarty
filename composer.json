@@ -1,10 +1,10 @@
 {
-    "name": "interexperts/smarty",
+    "name": "idfocus/smarty",
     "license": "MIT",
     "description": "Smarty wrapper",
     "autoload": {
         "psr-4": {
-            "InterExperts\\": "src/"
+            "IDFocus\\": "src/"
         }
     },
     "require-dev": {
@@ -14,11 +14,11 @@
     "repositories": [
         {
             "type": "vcs",
-            "url":  "git@github.com:interexperts/framework-config.git"
+            "url":  "git@github.com:idfocus/framework-config.git"
         }
     ],
     "require": {
         "smarty/smarty": "~3.1",
-        "interexperts/config": "~1.0"
+        "idfocus/config": "~1.0"
     }
 }

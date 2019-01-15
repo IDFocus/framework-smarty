@@ -1,11 +1,11 @@
 <?php
-namespace InterExperts;
+namespace IDFocus;
 /**
 * Wrapper voor de smarty class.
 *
 * @uses   Smarty  
 *
-* @author   InterExperts
+* @author   IDFocus
 */
 class Smarty {
 	protected static $instances = array();
@@ -32,6 +32,7 @@ class Smarty {
 
 		$smarty->template_dir = realpath(dirname(__FILE__).'/../../../../templates');
 		$smarty->compile_dir = realpath(dirname(__FILE__).'/../../../../cache/templates_c');
+		$smarty->plugins_dir = realpath(dirname(__FILE__).'/../../../../plugins');
 		$smarty->debugging = false;
 
 		if (defined('DEBUG') && DEBUG === true && defined('FORCE_COMPILE') && FORCE_COMPILE === true) {
@@ -39,7 +40,7 @@ class Smarty {
 			$smarty->force_compile = true;
 		}
 
-		$config = \InterExperts\Config::getInstance();
+		$config = \IDFocus\Config::getInstance();
 		$smarty->assign('config', $config);
 
 		return $smarty;

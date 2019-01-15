@@ -7,16 +7,16 @@
     "hash": "3a2b7f161a0bc19dc9225e039f41cbde",
     "packages": [
         {
-            "name": "interexperts/config",
+            "name": "idfocus/config",
             "version": "v1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/interexperts/framework-config.git",
+                "url": "https://github.com/IDFocus/framework-config.git",
                 "reference": "1326e2280d9b21696ef613c333cc35bafbd5b3c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/interexperts/framework-config/zipball/1326e2280d9b21696ef613c333cc35bafbd5b3c0",
+                "url": "https://api.github.com/repos/IDFocus/framework-config/zipball/1326e2280d9b21696ef613c333cc35bafbd5b3c0",
                 "reference": "1326e2280d9b21696ef613c333cc35bafbd5b3c0",
                 "shasum": ""
             },
@@ -27,12 +27,12 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "InterExperts\\": "src/"
+                    "IDFocus\\": "src/"
                 }
             },
             "support": {
-                "source": "https://github.com/interexperts/framework-config/tree/v1.0.2",
-                "issues": "https://github.com/interexperts/framework-config/issues"
+                "source": "https://github.com/idfocus/framework-config/tree/v1.0.2",
+                "issues": "https://github.com/idfocus/framework-config/issues"
             },
             "time": "2015-07-13 10:11:28"
         },
